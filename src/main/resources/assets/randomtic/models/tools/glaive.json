@@ -1,0 +1,8 @@
+{
+  "textures": {
+    "layer0": "randomtic:items/glaive/handle",
+    "layer1": "randomtic:items/glaive/blade",
+    "layer2": "randomtic:items/glaive/guard",
+    "broken1": "randomtic:items/glaive/blade_broken"
+  }
+}
