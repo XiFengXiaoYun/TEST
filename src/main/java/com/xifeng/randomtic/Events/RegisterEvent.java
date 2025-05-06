@@ -12,17 +12,18 @@ import slimeknights.tconstruct.library.materials.Material;
 @Mod.EventBusSubscriber(modid = Tags.MOD_ID)
 public class RegisterEvent {
     @SubscribeEvent
-    public void onConfigChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event)
-    {
+    public void onConfigChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event) {
         if (event.getModID().equals(Tags.MOD_ID))
         {
             ConfigManager.sync(Tags.MOD_ID, Config.Type.INSTANCE);
         }
     }
-
+/*
     @SubscribeEvent
     public void onMaterialRegistry(MaterialEvent.MaterialRegisterEvent event) {
         Material material = event.material;
         event.setCanceled(false);
     }
+
+ */
 }

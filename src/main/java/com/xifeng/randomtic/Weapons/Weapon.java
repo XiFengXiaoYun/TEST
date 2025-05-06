@@ -24,7 +24,7 @@ public class Weapon {
         register.register(glaive);
         TinkerRegistry.registerToolForgeCrafting(glaive);
         RandomTic.proxy.registerToolModel(glaive);
-        //TinkerRegistry.registerStencilTableCrafting(Pattern.setTagForPart((ItemStack) glaive, long_blade));
+        //TinkerRegistry.registerStencilTableCrafting((ItemStack) glaive);
     }
 
     public static void initGUI() {

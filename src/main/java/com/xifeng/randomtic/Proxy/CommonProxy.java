@@ -31,8 +31,6 @@ public class CommonProxy {
         }
 
          */
-
-        //ArsenalEntities.init();
     }
 
     public void init(FMLInitializationEvent e) {
