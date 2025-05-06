@@ -1,4 +1,4 @@
-package com.xifeng.randomtic.Weapons;
+package com.xifeng.tinkersidea.Weapons;
 /*
 import com.xifeng.randomtic.Proxy.ClientProxy;
 import net.minecraftforge.client.event.ModelRegistryEvent;

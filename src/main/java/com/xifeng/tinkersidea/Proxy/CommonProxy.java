@@ -1,7 +1,8 @@
-package com.xifeng.randomtic.Proxy;
+package com.xifeng.tinkersidea.Proxy;
 
-import com.xifeng.randomtic.Events.RegisterEvent;
-import com.xifeng.randomtic.RandomTic;
+import com.xifeng.tinkersidea.Events.RegisterEvent;
+import com.xifeng.tinkersidea.RandomTic;
+import com.xifeng.tinkersidea.Weapons.Weapon;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -31,8 +32,6 @@ public class CommonProxy {
         }
 
          */
-
-        //ArsenalEntities.init();
     }
 
     public void init(FMLInitializationEvent e) {
@@ -49,6 +48,7 @@ public class CommonProxy {
     public static void registerItems(RegistryEvent.Register<Item> event) {
         IForgeRegistry<Item> registry = event.getRegistry();
         //ArsenalTools.initToolParts(registry);
+        Weapon.init(registry);
     }
 
     @SubscribeEvent

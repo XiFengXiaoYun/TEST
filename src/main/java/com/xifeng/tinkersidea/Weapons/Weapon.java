@@ -1,6 +1,6 @@
-package com.xifeng.randomtic.Weapons;
+package com.xifeng.tinkersidea.Weapons;
 
-import com.xifeng.randomtic.RandomTic;
+import com.xifeng.tinkersidea.RandomTic;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -24,7 +24,7 @@ public class Weapon {
         register.register(glaive);
         TinkerRegistry.registerToolForgeCrafting(glaive);
         RandomTic.proxy.registerToolModel(glaive);
-        //TinkerRegistry.registerStencilTableCrafting(Pattern.setTagForPart((ItemStack) glaive, long_blade));
+        //TinkerRegistry.registerStencilTableCrafting((ItemStack) glaive);
     }
 
     public static void initGUI() {

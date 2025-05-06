@@ -1,4 +1,4 @@
-package com.xifeng.randomtic.Weapons;
+package com.xifeng.tinkersidea.Weapons;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -34,7 +34,7 @@ public class Glaive extends SwordCore {
 
     @Override
     public float damagePotential() {
-        return 2.0F;
+        return 1.5F;
     }
 
     @Override
@@ -63,7 +63,7 @@ public class Glaive extends SwordCore {
     public boolean dealDamage(ItemStack stack, EntityLivingBase player, Entity entity, float damage) {
         if (player instanceof EntityPlayer) {
             double reach = player.getDistanceSq(entity);
-            AxisAlignedBB sweepRange = entity.getEntityBoundingBox().grow(1.0,0.25,1.0);
+            AxisAlignedBB sweepRange = entity.getEntityBoundingBox().grow(3.0,0.75,3.0);
             for (Entity entity1 : player.world.getEntitiesWithinAABB(Entity.class, sweepRange)) {
                 if (!(entity1 instanceof EntityPlayer) && entity1 != entity && player.getDistanceSq(entity1) <= reach) {
                     entity1.attackEntityFrom(DamageSource.causePlayerDamage((EntityPlayer) player), damage);

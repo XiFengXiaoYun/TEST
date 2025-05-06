@@ -114,6 +114,8 @@ dependencies {
     implementation files('libs/TConstruct-1.12.2-2.13.0.183.jar')
     implementation files('libs/tinkersarsenal-0.7.1.jar')
     implementation files('libs/HadEnoughItems_1.12.2-4.25.5.jar')
+    implementation files('libs/geckolib-forge-1.12.2-3.0.31.jar')
+    implementation files('libs/Into The Dungeons - 1.6.jar')
     if (propertyBool('use_modern_java_syntax')) {
         annotationProcessor 'com.github.bsideup.jabel:jabel-javac-plugin:1.0.0'
         // Workaround for https://github.com/bsideup/jabel/issues/174

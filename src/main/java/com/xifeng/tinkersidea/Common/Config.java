@@ -1,6 +1,6 @@
-package com.xifeng.randomtic.Common;
+package com.xifeng.tinkersidea.Common;
 
-
+/*
 import slimeknights.mantle.pulsar.config.ForgeCFG;
 
 @net.minecraftforge.common.config.Config(
@@ -13,3 +13,4 @@ public class Config {
 
     public Config() {}
 }
+*/

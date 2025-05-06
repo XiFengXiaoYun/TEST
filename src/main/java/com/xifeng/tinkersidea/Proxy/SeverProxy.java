@@ -1,4 +1,4 @@
-package com.xifeng.randomtic.Proxy;
+package com.xifeng.tinkersidea.Proxy;
 
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 

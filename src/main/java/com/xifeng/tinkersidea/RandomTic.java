@@ -1,5 +1,5 @@
-package com.xifeng.randomtic;
-import com.xifeng.randomtic.Proxy.CommonProxy;
+package com.xifeng.tinkersidea;
+import com.xifeng.tinkersidea.Proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
