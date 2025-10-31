@@ -1,11 +1,11 @@
-package com.xifeng.tinkersidea.Proxy;
-
+package com.xifeng.tinkersidea.deprecated.Proxy;
+/*
 import com.xifeng.tinkersidea.Weapons.Weapon;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import slimeknights.tconstruct.common.ModelRegisterUtil;
@@ -15,12 +15,6 @@ import slimeknights.tconstruct.library.tools.ToolCore;
 @Mod.EventBusSubscriber({Side.CLIENT})
 public class ClientProxy extends CommonProxy {
     public ClientProxy() {
-    }
-    @Override
-    public void preInit(FMLPreInitializationEvent e) {
-        super.preInit(e);
-        //ArsenalEntities.initModels();
-        //MinecraftForge.EVENT_BUS.register(new ArsenalRenderEvents());
     }
 
     @SubscribeEvent
@@ -40,13 +34,12 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void init(FMLInitializationEvent e) {
         super.init(e);
-        Weapon.initGUI();
     }
-/*
+
     @Override
     public void postInit(FMLPostInitializationEvent e) {
         Weapon.initGUI();
     }
+}
 
  */
-}

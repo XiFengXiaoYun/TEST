@@ -1,38 +1,22 @@
-package com.xifeng.tinkersidea.Proxy;
-
-import com.xifeng.tinkersidea.Events.RegisterEvent;
-import com.xifeng.tinkersidea.RandomTic;
+package com.xifeng.tinkersidea.deprecated.Proxy;
+/*
+import com.xifeng.tinkersidea.TinkersIdea;
+import com.xifeng.tinkersidea.Tags;
 import com.xifeng.tinkersidea.Weapons.Weapon;
-import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.LoaderState;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.EntityEntry;
 import net.minecraftforge.registries.IForgeRegistry;
 import slimeknights.tconstruct.library.tools.IToolPart;
 import slimeknights.tconstruct.library.tools.ToolCore;
 
-@Mod.EventBusSubscriber
+@Mod.EventBusSubscriber(modid = Tags.MOD_ID)
 public class CommonProxy {
-    public void preInit(FMLPreInitializationEvent e) {
-        MinecraftForge.EVENT_BUS.register(new RegisterEvent());
-        /*ArsenalToolTraits.initToolTraits();
-        ArsenalToolMaterials.initToolMaterials();
-
-        if (Loader.isModLoaded("conarm")) {
-            ArsenalArmorTraits.initArmorTraits();
-            ArsenalArmorMaterials.initArmorMaterials();
-        }
-
-         */
-    }
 
     public void init(FMLInitializationEvent e) {
     }
@@ -40,24 +24,17 @@ public class CommonProxy {
     public void postInit(FMLPostInitializationEvent e) {
     }
 
-    @SubscribeEvent
-    public static void registerBlocks(RegistryEvent.Register<Block> event) {
-    }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         IForgeRegistry<Item> registry = event.getRegistry();
-        //ArsenalTools.initToolParts(registry);
         Weapon.init(registry);
     }
 
-    @SubscribeEvent
-    public void registerEntities(RegistryEvent.Register<EntityEntry> event) {
-    }
 
     public void registerModels() {
         if(Loader.instance().hasReachedState(LoaderState.INITIALIZATION)) {
-            RandomTic.LOGGER.error(
+            TinkersIdea.LOGGER.error(
                     "Proxy.registerModels has to be called during preInit. Otherwise the models wont be found on first load.");
         }
     }
@@ -69,3 +46,5 @@ public class CommonProxy {
     public void registerToolModel(ToolCore toolCore) {
     }
 }
+
+ */

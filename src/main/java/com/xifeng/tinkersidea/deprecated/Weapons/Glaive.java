@@ -1,5 +1,5 @@
-package com.xifeng.tinkersidea.Weapons;
-
+package com.xifeng.tinkersidea.deprecated.Weapons;
+/*
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -34,7 +34,7 @@ public class Glaive extends SwordCore {
 
     @Override
     public float damagePotential() {
-        return 1.5F;
+        return 1.0F;
     }
 
     @Override
@@ -95,3 +95,5 @@ public class Glaive extends SwordCore {
         return data;
     }
 }
+
+ */

@@ -1,4 +1,4 @@
-package com.xifeng.tinkersidea.Common;
+package com.xifeng.tinkersidea.deprecated.Common;
 
 /*
 import slimeknights.mantle.pulsar.config.ForgeCFG;
