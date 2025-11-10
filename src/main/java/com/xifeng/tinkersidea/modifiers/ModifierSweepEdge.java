@@ -15,7 +15,6 @@ public class ModifierSweepEdge extends ModifierTrait {
     public void applyEffect(NBTTagCompound rootCompound, NBTTagCompound modifierTag) {
         super.applyEffect(rootCompound, modifierTag);
         int level = modifierTag.getInteger("level");
-        System.out.println(level);
         if (Enchantments.SWEEPING != null) {
             while (level > ToolBuilder.getEnchantmentLevel(rootCompound, Enchantments.SWEEPING)) {
                 ToolBuilder.addEnchantment(rootCompound, Enchantments.SWEEPING);
