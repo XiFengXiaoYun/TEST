@@ -9,7 +9,7 @@ import net.minecraftforge.event.entity.EntityEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
+//
 @Mod.EventBusSubscriber(modid = Tags.MOD_ID)
 public class Attribute {
     public static final IAttribute MAGIC = new RangedAttribute(null, "ti.magicPotency", 1.0, 0.0, 10.0).setShouldWatch(false);
