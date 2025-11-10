@@ -43,7 +43,7 @@ import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.List;
 import java.util.UUID;
-
+//
 @Mod.EventBusSubscriber(modid = Tags.MOD_ID)
 public class SpellBlade extends SwordCore implements IWorkbenchItem, ISpellCastingItem, IManaStoringItem {
 
