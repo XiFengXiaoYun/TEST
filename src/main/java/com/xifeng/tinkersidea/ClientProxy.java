@@ -16,14 +16,14 @@ public class ClientProxy extends CommonProxy {
             info.addSlotPosition(33 - 10 - 14, 42 + 10 + 12); // handle
             info.addSlotPosition(33 - 8 + 6, 42 - 10 + 4 - 4); // head
             info.addSlotPosition(33 + 14 + 6, 42 - 10 - 2 - 4); // head 2
-            info.addSlotPosition( 33, 42); //guard
+            info.addSlotPosition( 11, 42); //guard
             TinkerRegistryClient.addToolBuilding(info);
         }
         if(WeaponAll.spellBlade != null) {
             ToolBuildGuiInfo info = new ToolBuildGuiInfo(WeaponAll.spellBlade);
             info.addSlotPosition(12, 62);
             info.addSlotPosition(48, 26);
-            info.addSlotPosition(32, 10);
+            info.addSlotPosition(11, 44);
             info.addSlotPosition(30, 44);
             TinkerRegistryClient.addToolBuilding(info);
         }

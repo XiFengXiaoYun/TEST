@@ -440,8 +440,6 @@ public class WizardryCore {
             ItemStack original = centre.getStack().copy();
             centre.putStack(this.applyUpgrade(player, centre.getStack(), upgrade.getStack()));
 
-            System.out.printf("the original tier is %s \n", SpellBladeHelper.getTier(original));
-
             changed = !ItemStack.areItemStacksEqual(centre.getStack(), original);
         }
         Spell[] spells = SpellBladeHelper.getSpells(centre.getStack());

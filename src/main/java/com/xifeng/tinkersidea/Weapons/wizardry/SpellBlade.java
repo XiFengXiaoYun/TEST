@@ -2,7 +2,6 @@ package com.xifeng.tinkersidea.Weapons.wizardry;
 
 import com.google.common.collect.Multimap;
 import com.xifeng.tinkersidea.Attribute;
-import com.xifeng.tinkersidea.Tags;
 import com.xifeng.tinkersidea.Weapons.WeaponAll;
 import com.xifeng.tinkersidea.parts.MagicMaterialType;
 import com.xifeng.tinkersidea.util.WizardryUtil;
@@ -26,7 +25,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import slimeknights.tconstruct.library.Util;
@@ -43,8 +41,7 @@ import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.List;
 import java.util.UUID;
-//
-@Mod.EventBusSubscriber(modid = Tags.MOD_ID)
+
 public class SpellBlade extends SwordCore implements IWorkbenchItem, ISpellCastingItem, IManaStoringItem {
 
     private final WizardryCore wizardryCore;

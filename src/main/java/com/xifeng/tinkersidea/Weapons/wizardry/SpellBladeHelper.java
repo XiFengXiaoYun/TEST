@@ -69,7 +69,6 @@ public final class SpellBladeHelper {
     }
 
     public static void setTier(ItemStack stack, String tierName) {
-        System.out.println("setTier is working");
         NBTTagCompound nbt = getWizardryData(stack);
         nbt.setString(TIER, tierName);
     }
